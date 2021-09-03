@@ -115,7 +115,7 @@ return (
 
     <div className="pr-func">
     <label className="pr-label">Performance Rating: </label><label className="label">{performance}</label>
-    <div className="pr"><input type="range" min="1" max="100" onChange={onChangePerformace} value={performance} className="slider"></input></div>
+    <div className="pr"><input type="range" min="1" max="10" onChange={onChangePerformace} value={performance} className="slider"></input></div>
     </div>
 
     </div>
