@@ -8,11 +8,12 @@ Users to get paid based on their performance.
 SolStream is comprised of Solana Web3.0 API, TypeScript that helps transferring payments.
 
 # Installing
-Clone the repo, and run npm install.
+Clone the repo:
 
 ```
 $ git clone https://github.com/shriyatyagii/SolStream.git
 $ cd Soulster3
+$ npm install
 $ npm start
 ```
 
