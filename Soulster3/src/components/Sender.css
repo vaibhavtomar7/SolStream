@@ -1,0 +1,307 @@
+.form-row {
+  margin-bottom: 24px
+}
+.form-control {
+  outline-style: none;
+  height: 42px;
+  border-bottom: 1px solid ;
+  width: 100%;
+  padding:18px;
+  margin: center-align;
+  color:black ;
+  border-radius: 20px;
+  
+}
+
+body{
+
+  background-color:#fafafa;
+
+}
+h2{
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 150px;
+  text-align: center;
+}
+
+p{
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper{
+  width: 100%;
+  padding:30px;
+  align-items: center;
+}
+.form-control:focus {
+  border-color: #f3d4b7
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 13px
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  font-size: 13px
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+  font-size: 13px
+}
+
+.form-control:-moz-placeholder {
+  color: #999;
+  font-size: 13px
+}
+
+textarea.form-control {
+  padding-top: 11px;
+  padding-bottom: 11px
+}
+ .form-row.form-group {
+      display: block
+  }
+
+  .form-row.form-group .form-holder {
+      width: 50%;
+      margin-right: 0;
+      margin-bottom: 24px
+  }
+.form-row label {
+  margin-bottom: 8px;
+  display: block
+}
+
+.form-row.form-group {
+  display: flex;
+}
+
+.form-row.form-group .form-holder {
+  width: 50%;
+  margin-right: 21px
+}
+
+.form-row.form-group .form-holder:last-child {
+  margin-right: 0
+}
+
+.button {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+button.button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: cyan;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000000;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 15px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.label{
+  font-weight:bold;
+}
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+.text{
+  float:left !important;
+  width:40% ;
+  margin-right:15px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+
+  border-radius: 5%;
+  height:428px;
+
+}
+.rating-sub{
+  margin: 20px;
+}
+.rating{
+  float:left !important;
+  margin-right: 13px;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 5%;
+  height: 428px;
+  align-items: center;
+
+
+}
+.form{
+  float:left !important;
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+
+  border-radius: 5%;
+
+}
+.pr{
+  margin-left:15px;
+  margin-right: 15px;
+  padding-bottom:30px ;
+
+  align-items: center;
+}
+
+.button-pr{
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  padding: .5rem 3rem;
+  color: black;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  margin-top:100px;
+
+}
+button.button-pr:hover {
+  box-shadow: none;
+  color: white;
+}
+.button-pr span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-pr span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.main{
+  width: 100%;
+}
+.text-sub{
+  margin:20px;
+}
+
+.pr-func{
+  margin-top: 20px;
+}
+.time-form{
+  width:30%;
+  float:left;
+  outline-style: none;
+  height: 42px;
+  border-bottom: 1px solid ;
+  padding:18px;
+  margin: center-align;
+  color:black ;
+  border-radius: 20px;
+}
+
